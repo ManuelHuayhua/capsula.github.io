@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Emociones</title>
+    <!-- Vinculamos Bootstrap desde su CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilos adicionales */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        /* Título mejorado */
+        h1 {
+            text-align: center;
+            font-size: 3.5rem;
+            color: #333;
+            margin-top: 20px;
+            font-weight: 700;  /* Hace el texto más grueso */
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        /* Animación para el título */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Estilos para el botón rosado */
+        .toggle-button {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #ff66b2;
+            color: white;
+            border: 2px solid #333;
+            border-radius: 8px;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Hover en el botón */
+        .toggle-button:hover {
+            background-color: #ff3385;
+        }
+
+        /* Estilos para las tarjetas de imágenes */
+        .image-card {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 550px; /* Altura fija para las tarjetas */
+        }
+
+        /* Efecto de hover en las imágenes */
+        .image-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .image-card img {
+            width: 100%; /* Asegura que las imágenes llenen el contenedor */
+            height: 100%; /* Hace que las imágenes se ajusten a la altura */
+            object-fit: cover; /* Mantiene la proporción de la imagen y la recorta si es necesario */
+            transition: opacity 0.3s ease;
+        }
+
+        .image-card img:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Título -->
+    <h1>¿QUÉ EMOCIÓN QUIERES TRABAJAR HOY?</h1>
+
+    <!-- Galería de imágenes utilizando el grid de Bootstrap -->
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <a href="ansiedad.html" class="image-card">
+                    <img src="static/imagenes/ansiedad.png" alt="Ansiedad 1" class="img-fluid">
+                </a>
+            </div>
+            
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <a href="ira.html" class="image-card">
+                    <img src="static/imagenes/ira.png" alt="Ira 1" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <a href="estres.html" class="image-card">
+                    <img src="static/imagenes/estres2.png" alt="Estrés 2" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <a href="ansiedad2.html" class="image-card">
+                    <img src="static/imagenes/ansiedad2.png" alt="Ansiedad 2" class="img-fluid">
+                </a>
+            </div>
+           
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <a href="ira2.html" class="image-card">
+                    <img src="static/imagenes/ira2.png" alt="Ira 2" class="img-fluid">
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <a href="estres2.html" class="image-card">
+                    <img src="static/imagenes/estres.png" alt="Estrés 1" class="img-fluid">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón rosado -->
+    <a href="final.html">
+        <!-- Botón rosado -->
+        <button class="toggle-button">FINISH</button>
+    </a>
+
+    <!-- Bootstrap JS y dependencias de Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
